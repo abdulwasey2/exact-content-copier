@@ -1,0 +1,25 @@
+{
+    "name": "exact-content-copier",
+    "displayName": "Exact Content Copier",
+    "description": "Copies file content EXACTLY as it is on disk, byte-for-byte, no stripping, no trimming, no cleaning",
+    "version": "1.0.0",
+    "publisher": "you",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:exactContentCopier.copyContent"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "exactContentCopier.copyContent",
+                "title": "Exact Copy: Copy Category Content (Verbatim)"
+            }
+        ]
+    }
+}
